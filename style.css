@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  text-align: center;
+  /*This would work only when the display
+                      property is inline block*/
+  /*font-family: serif; /*by default we have serif font only*/
+  /*font-family: sans-serif;*/
+  /* to change the font other than arial(default sans serif)*/
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  /* width: 10%; If it is a block elemenet then we have to center it using below command
+  margin: 0 auto 0 auto; By applying this we could set the width
+                          as well as allign them either horizontally or veritcally
+  */
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem; /*100% is around 16px = 1em, by % it changes to a dynamic size*/
+  color: #1eae98;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  color: #1eae98;
+  font-size: 1.3rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #1eae98;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2;
+}
+.pic{
+  position: relative;
+  margin-top: 30px;
+  width: 250px;
+  height: 250px;
+}
+
+.skill-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.code_img{
+  width: 25%;
+  height: 25%;
+  float: left;
+  margin: 0 30px 0 auto;
+}
+
+.market_img{
+  width: 25%;
+  height: 25%;
+  float: right;
+  margin: 0 auto 0 30px;
+}
+
+hr{
+  /*border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  border-color: grey;
+  background-color: white;
+  width: 5%;*/
+  border: dotted #Eaf6f6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 80px auto;
+
+}
+
+
+
+/* margin: top right bottom left*/
+/*Since now the bottom two images, one cloud ane one mountain are not getting centered as
+we wanted, we want mountains to center @import
+so for that we need to remove the cloud out of the HTML flow*/
+/* we can do this by changing the positoon of cloud from static to aboslute*/
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+  /*this all margins will be relative to the top container*/
+}
+
+.top-container {
+  background-color: #e4efe7;
+  position: relative;
+  /* We need at least one element have position set to relative
+                      in order to set the other elements position to aboslute Unless
+                      the other elements will be positoning relative to the body*/
+  padding: 100px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 350px;
+  /*this all margins will be relative to the top container*/
+  top: 50px;
+}
+
+/* To style our texts*/
+/* we have to do that under the body tag(Refer fontfamily)*/
+
+.middle-container{
+  margin: 100px 0;
+}
+
+.intro{
+  width: 30%;
+  margin: auto;
+}
+
+.bottom-container{
+  background-color: #e4efe7;
+  padding: 50px 0 20px;
+}
+
+.help{
+  width: 30%;
+  margin: auto;
+}
+.help1{
+  margin: 40px auto 60px;
+}
+
+a{
+  color: #1eae98;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+}
+
+a:hover{ /*This is pseduo class which will occur if we hover over that location*/
+  color: grey;
+}
+
+
+.copyright{
+  color: grey;
+  font-size: 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px 0;
+}
+
+.btn {
+  background: #1eae98;
+  background-image: -webkit-linear-gradient(top, #1eae98, #e4efe7);
+  background-image: -moz-linear-gradient(top, #1eae98, #e4efe7);
+  background-image: -ms-linear-gradient(top, #1eae98, #e4efe7);
+  background-image: -o-linear-gradient(top, #1eae98, #e4efe7);
+  background-image: linear-gradient(to bottom, #1eae98, #e4efe7);
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #13ab9c 0px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #e4efe7;
+  text-decoration: none;
+}
